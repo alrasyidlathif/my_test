@@ -13,7 +13,7 @@ def cetak_gambar(n):
     l = n - 2
 
     if n > 1:
-        print(' - - - ' + (m)*' ' + 'panjang' + (m)*' ' + ' - - - ')
+        print((n-m-2)*' ' + l*'- ' + (m)*' ' + 'panjang' + (m)*' ' + l*' -' + (n-m-2)*' ')
 
         for i_atas in range(m):
 
@@ -33,9 +33,9 @@ def cetak_gambar(n):
             print('*')
 
     else:
-        print(' - - - ' + m*' ' + 'panjang' + m*' ' + ' - - - ')
+        print(0*' ' + m*' ' + 'panjang' + m*' ' + 0*' ')
         print('*')
 
 
 if __name__ == '__main__':
-    cetak_gambar(5)
+    cetak_gambar(13)
